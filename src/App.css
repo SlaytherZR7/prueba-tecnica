@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   color: #fff;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(to bottom, #020917, #101725);
@@ -27,4 +28,32 @@ body {
 
 .pointer {
   cursor: crosshair;
+}
+
+.table--showColors tr:nth-child(odd) {
+  background: #333;
+}
+
+.table--showColors tr:nth-child(even) {
+  background: #555;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
 }
