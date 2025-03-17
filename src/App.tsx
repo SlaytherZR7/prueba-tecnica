@@ -74,7 +74,7 @@ const App = () => {
   }, [filteredUsers, sorting]);
 
   return (
-    <div className="content">
+    <div>
       <h1>Prueba técnica</h1>
       <header>
         <button onClick={toggleColors} type="button">
@@ -89,6 +89,7 @@ const App = () => {
           Resetear estado
         </button>
         <input
+          type="text"
           placeholder="Filtra por país"
           onChange={(e) => {
             setFilterCountry(e.target.value);
